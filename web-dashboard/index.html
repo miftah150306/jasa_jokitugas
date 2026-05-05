@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joki Coding & Tugas | Premium Service Dashboard</title>
+    <meta name="description" content="Layanan joki tugas coding, web development, dan pemograman terpercaya dengan pengerjaan cepat dan harga bersahabat. Hubungi kami langsung via WhatsApp.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <div class="logo-icon"><i class="fas fa-code"></i></div>
+                    <span>Joki<span class="highlight">Pro</span></span>
+                </div>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active" data-tab="dashboard">
+                        <i class="fas fa-chart-pie"></i>
+                        <span>Dashboard</span>
+                    </li>
+                    <li data-tab="services">
+                        <i class="fas fa-laptop-code"></i>
+                        <span>Layanan</span>
+                    </li>
+                    <li data-tab="calculator">
+                        <i class="fas fa-calculator"></i>
+                        <span>Cek Harga</span>
+                    </li>
+                    <li data-tab="portfolio">
+                        <i class="fas fa-folder-open"></i>
+                        <span>Portofolio</span>
+                    </li>
+                    <li data-tab="contact">
+                        <i class="fas fa-headset"></i>
+                        <span>Hubungi Kami</span>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <div class="user-card">
+                    <div class="avatar">A</div>
+                    <div class="user-info">
+                        <p class="name">Admin JokiPro</p>
+                        <p class="status">Online 24/7</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-header">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Cari layanan atau bahasa pemrograman...">
+                </div>
+                <div class="header-actions">
+                    <button class="btn-icon"><i class="far fa-bell"></i><span class="badge"></span></button>
+                    <button class="btn-primary" onclick="redirectToWA('Halo Admin, saya ingin tanya-tanya tentang joki tugas.')">
+                        <i class="fab fa-whatsapp"></i> Order Sekarang
+                    </button>
+                </div>
+            </header>
+
+            <!-- Dashboard View -->
+            <div id="dashboard" class="tab-content active">
+                <div class="welcome-banner">
+                    <div class="banner-text">
+                        <h1>Selamat Datang di <span class="gradient-text">JokiPro</span></h1>
+                        <p>Solusi tercepat dan terpercaya untuk menyelesaikan tugas coding dan akademik Anda. Tanpa ribet, langsung pengerjaan.</p>
+                        <button class="btn-secondary" onclick="switchTab('services')">Lihat Layanan</button>
+                    </div>
+                    <div class="banner-img">
+                        <!-- Background image will be set via CSS or an img tag -->
+                        <img src="coding_service_hero.png" alt="Hero" class="hero-thumb">
+                    </div>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon purple"><i class="fas fa-tasks"></i></div>
+                        <div class="stat-data">
+                            <h3>1,240+</h3>
+                            <p>Tugas Selesai</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon blue"><i class="fas fa-users"></i></div>
+                        <div class="stat-data">
+                            <h3>850+</h3>
+                            <p>Klien Puas</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon green"><i class="fas fa-star"></i></div>
+                        <div class="stat-data">
+                            <h3>4.9/5</h3>
+                            <p>Rating Rata-rata</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon orange"><i class="fas fa-clock"></i></div>
+                        <div class="stat-data">
+                            <h3>~24 Jam</h3>
+                            <p>Waktu Pengerjaan</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-bottom">
+                    <div class="recent-orders section">
+                        <div class="section-header">
+                            <h2>Antrean Pengerjaan Terbaru</h2>
+                            <span class="view-all">Live Status</span>
+                        </div>
+                        <div class="order-list">
+                            <div class="order-item">
+                                <div class="order-lang python">PY</div>
+                                <div class="order-info">
+                                    <p class="order-title">Data Scraping & Analysis</p>
+                                    <p class="order-meta">Selesai 10 menit yang lalu</p>
+                                </div>
+                                <div class="order-status done">Selesai</div>
+                            </div>
+                            <div class="order-item">
+                                <div class="order-lang web">WEB</div>
+                                <div class="order-info">
+                                    <p class="order-title">Landing Page React + Tailwind</p>
+                                    <p class="order-meta">Sedang dikerjakan</p>
+                                </div>
+                                <div class="order-status active">Proses</div>
+                            </div>
+                            <div class="order-item">
+                                <div class="order-lang java">JAVA</div>
+                                <div class="order-info">
+                                    <p class="order-title">Sistem Inventory Perpustakaan</p>
+                                    <p class="order-meta">Antrean: #1</p>
+                                </div>
+                                <div class="order-status pending">Menunggu</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimoni section">
+                        <div class="section-header">
+                            <h2>Apa Kata Mereka?</h2>
+                        </div>
+                        <div class="testimonial-card">
+                            <p class="quote">"Gila sih, tugas yang harusnya seminggu kelar cuma semalam di JokiPro. Penjelasan kodenya juga lengkap banget!"</p>
+                            <div class="author">
+                                <img src="https://ui-avatars.com/api/?name=Budi+Santoso&background=random" alt="User">
+                                <div>
+                                    <p class="author-name">Budi Santoso</p>
+                                    <p class="author-role">Mahasiswa Teknik Informatika</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Services View -->
+            <div id="services" class="tab-content">
+                <div class="section-title">
+                    <h2>Layanan Kami</h2>
+                    <p>Pilih kategori tugas yang ingin Anda konsultasikan</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-globe"></i></div>
+                        <h3>Web Development</h3>
+                        <p>HTML, CSS, JS, React, Next.js, Laravel, PHP, MySQL.</p>
+                        <button class="btn-outline" onclick="orderService('Web Development')">Konsultasi</button>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <h3>Mobile App</h3>
+                        <p>Flutter, Android Native (Java/Kotlin), React Native.</p>
+                        <button class="btn-outline" onclick="orderService('Mobile App')">Konsultasi</button>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-brain"></i></div>
+                        <h3>Data Science & AI</h3>
+                        <p>Python, Machine Learning, Data Scraping, Visualisasi Data.</p>
+                        <button class="btn-outline" onclick="orderService('Data Science')">Konsultasi</button>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-desktop"></i></div>
+                        <h3>Desktop App</h3>
+                        <p>Java GUI, C++, C#, Python Tkinter/PyQt.</p>
+                        <button class="btn-outline" onclick="orderService('Desktop App')">Konsultasi</button>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-book"></i></div>
+                        <h3>Tugas Akademik</h3>
+                        <p>Algoritma, Struktur Data, Basis Data, Jaringan Komputer.</p>
+                        <button class="btn-outline" onclick="orderService('Tugas Akademik')">Konsultasi</button>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-bug"></i></div>
+                        <h3>Bug Fixing</h3>
+                        <p>Perbaikan error pada kode yang sudah ada atau debugging.</p>
+                        <button class="btn-outline" onclick="orderService('Bug Fixing')">Konsultasi</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Calculator View -->
+            <div id="calculator" class="tab-content">
+                <div class="section-title">
+                    <h2>Estimasi Harga</h2>
+                    <p>Hitung perkiraan biaya tugas Anda secara transparan</p>
+                </div>
+                <div class="calculator-container">
+                    <div class="calc-form">
+                        <div class="input-group">
+                            <label>Jenis Tugas</label>
+                            <select id="task-type">
+                                <option value="basic">Pemrograman Dasar (Logic/CLI)</option>
+                                <option value="web-basic">Web Statis (HTML/CSS)</option>
+                                <option value="web-complex">Web Dinamis (Fullstack)</option>
+                                <option value="mobile">Mobile App</option>
+                                <option value="ai">Data Science / AI</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label>Tingkat Kesulitan</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="difficulty" value="1" checked> Mudah</label>
+                                <label><input type="radio" name="difficulty" value="1.5"> Menengah</label>
+                                <label><input type="radio" name="difficulty" value="2.5"> Sulit</label>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label>Deadline (Hari)</label>
+                            <input type="range" id="deadline" min="1" max="14" value="7">
+                            <div class="range-value"><span id="deadline-val">7</span> Hari</div>
+                        </div>
+                    </div>
+                    <div class="calc-result">
+                        <p>Estimasi Biaya Mulai Dari:</p>
+                        <div class="price-display">Rp <span id="total-price">50.000</span></div>
+                        <p class="price-note">*Harga dapat berubah setelah konsultasi detail tugas.</p>
+                        <button class="btn-primary full-width" onclick="orderFromCalc()">
+                            <i class="fab fa-whatsapp"></i> Hubungi Sekarang
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio View -->
+            <div id="portfolio" class="tab-content">
+                <div class="section-title">
+                    <h2>Hasil Kerja Kami</h2>
+                    <p>Beberapa project yang telah berhasil kami selesaikan</p>
+                </div>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="https://images.unsplash.com/photo-1551288049-bbbda536339a?auto=format&fit=crop&w=400&q=80" alt="Project">
+                        <div class="portfolio-overlay">
+                            <h4>Dashboard Inventory</h4>
+                            <p>PHP Laravel & MySQL</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=400&q=80" alt="Project">
+                        <div class="portfolio-overlay">
+                            <h4>Analisis Sentiment</h4>
+                            <p>Python & Scikit-Learn</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=400&q=80" alt="Project">
+                        <div class="portfolio-overlay">
+                            <h4>App E-Commerce</h4>
+                            <p>Flutter Framework</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact View -->
+            <div id="contact" class="tab-content">
+                <div class="section-title">
+                    <h2>Hubungi Kami</h2>
+                    <p>Siap membantu 24/7 untuk solusi coding Anda</p>
+                </div>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <i class="fab fa-whatsapp"></i>
+                            <h4>WhatsApp</h4>
+                            <p>087865307837</p>
+                            <a href="https://wa.me/6287865307837" target="_blank" class="btn-text">Klik untuk Chat &rarr;</a>
+                        </div>
+                        <div class="contact-card">
+                            <i class="far fa-envelope"></i>
+                            <h4>Email</h4>
+                            <p>support@jokipro.com</p>
+                        </div>
+                        <div class="contact-card">
+                            <i class="fab fa-instagram"></i>
+                            <h4>Instagram</h4>
+                            <p>@jokipro_official</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Background Decoration -->
+    <div class="bg-glow"></div>
+    <div class="bg-glow-2"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
