@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import '../main.dart';
+import '../utils/constants.dart';
 
 class ReviewPage extends StatefulWidget {
   const ReviewPage({super.key});

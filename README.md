@@ -10,6 +10,9 @@
 
 ## ✨ Fitur Utama
 
+### 🎨 Animated Splash Screen
+Tampilan pembuka yang memukau dengan animasi Lottie "Person Working" dan partikel dokumen yang terbang masuk ke laptop, memberikan kesan sistem yang cerdas dan siap memproses tugas Anda.
+
 ### 📊 Dashboard Overview
 Tampilan ringkasan statistik layanan, mulai dari jumlah tugas yang telah diselesaikan hingga rating kepuasan klien. Dilengkapi dengan bagian **FAQ** untuk membantu menjawab pertanyaan umum klien secara instan.
 

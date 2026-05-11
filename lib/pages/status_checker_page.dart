@@ -17,7 +17,7 @@ class _StatusCheckerPageState extends State<StatusCheckerPage> {
   Widget build(BuildContext context) {
     final provider = Provider.of<DashboardProvider>(context);
 
-    return Padding(
+    return SingleChildScrollView(
       padding: const EdgeInsets.all(32),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
