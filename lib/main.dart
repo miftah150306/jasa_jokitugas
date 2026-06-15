@@ -20,34 +20,32 @@ class JokiProApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final provider = Provider.of<DashboardProvider>(context);
+    
     return MaterialApp(
       title: 'JokiPro Dashboard',
       debugShowCheckedModeBanner: false,
+      themeMode: provider.isDarkMode ? ThemeMode.dark : ThemeMode.light,
       theme: ThemeData(
+        brightness: Brightness.light,
+        primaryColor: provider.primaryColor,
+        scaffoldBackgroundColor: const Color(0xFFF1F5F9),
+        textTheme: GoogleFonts.outfitTextTheme(ThemeData.light().textTheme),
+        colorScheme: ColorScheme.light(
+          primary: provider.primaryColor,
+          secondary: provider.secondaryColor,
+          surface: Colors.white,
+        ),
+      ),
+      darkTheme: ThemeData(
         brightness: Brightness.dark,
-        primaryColor: const Color(0xFF6366F1),
+        primaryColor: provider.primaryColor,
         scaffoldBackgroundColor: const Color(0xFF0F172A),
         textTheme: GoogleFonts.outfitTextTheme(ThemeData.dark().textTheme),
-        colorScheme: const ColorScheme.dark(
-          primary: Color(0xFF6366F1),
-          secondary: Color(0xFFEC4899),
-          surface: Color(0xFF1E293B),
-        ),
-        inputDecorationTheme: InputDecorationTheme(
-          filled: true,
-          fillColor: Colors.white.withOpacity(0.05),
-          border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(12),
-            borderSide: BorderSide.none,
-          ),
-          enabledBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(12),
-            borderSide: BorderSide.none,
-          ),
-          focusedBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(12),
-            borderSide: const BorderSide(color: Color(0xFF6366F1)),
-          ),
+        colorScheme: ColorScheme.dark(
+          primary: provider.primaryColor,
+          secondary: provider.secondaryColor,
+          surface: const Color(0xFF1E293B),
         ),
       ),
       home: const SplashScreen(),
