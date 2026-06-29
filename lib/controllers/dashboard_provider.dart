@@ -42,7 +42,7 @@ class DashboardProvider extends ChangeNotifier {
   }
 
   // ── Role Selector (V1.3) ────────────────────────────────────
-  String _selectedLevelId = 'smk'; // default ke SMK
+  String _selectedLevelId = 'smk'; // default ke Paket Pro
   String get selectedLevelId => _selectedLevelId;
 
   EducationLevel get selectedLevel =>
@@ -56,7 +56,7 @@ class DashboardProvider extends ChangeNotifier {
   }
 
   // ── Calculator Logic ────────────────────────────────────────
-  String _selectedTaskType = "Pemrograman Dasar";
+  String _selectedTaskType = "Web Statis";
   double _difficulty = 1.0;
   double _deadline = 7.0;
 
@@ -72,19 +72,19 @@ class DashboardProvider extends ChangeNotifier {
   }
 
   int get estimatedPrice {
-    double base = 50000;
-    
-    // Project Koding
-    if (_selectedTaskType.contains("Web Statis")) base = 150000;
-    if (_selectedTaskType.contains("Web Dinamis")) base = 500000;
-    if (_selectedTaskType.contains("Mobile")) base = 750000;
-    if (_selectedTaskType.contains("Data Science")) base = 400000;
+    double base = 300000;
 
-    // Tugas Sekolah / Akademik
-    if (_selectedTaskType.contains("Tugas Matematika")) base = 30000;
-    if (_selectedTaskType.contains("Pembuatan Makalah")) base = 60000;
-    if (_selectedTaskType.contains("Pembuatan PPT")) base = 45000;
-    if (_selectedTaskType.contains("Tugas Harian Umum")) base = 25000;
+    // Paket Digital & Desain
+    if (_selectedTaskType.contains("Landing Page")) base = 350000;
+    if (_selectedTaskType.contains("Company Profile")) base = 700000;
+    if (_selectedTaskType.contains("Desain Presentasi")) base = 250000;
+    if (_selectedTaskType.contains("Otomatisasi Dokumen")) base = 200000;
+
+    // Paket Development
+    if (_selectedTaskType.contains("Web Statis")) base = 500000;
+    if (_selectedTaskType.contains("Web Dinamis")) base = 1500000;
+    if (_selectedTaskType.contains("Mobile App")) base = 3000000;
+    if (_selectedTaskType.contains("Data Science")) base = 1500000;
 
     double multiplier = 1 + (14 - _deadline) / 13;
     return (base * _difficulty * multiplier).round();
@@ -106,10 +106,10 @@ class DashboardProvider extends ChangeNotifier {
 
     await Future.delayed(const Duration(seconds: 2));
 
-    if (jobId.toUpperCase().startsWith("JP-")) {
+    if (jobId.toUpperCase().startsWith("DC-")) {
       _statusResult = "Status: Sedang Dikerjakan (65%)";
     } else {
-      _statusResult = "ID Tugas tidak ditemukan. Silakan hubungi admin.";
+      _statusResult = "ID Proyek tidak ditemukan. Silakan hubungi tim DevConnect.";
     }
 
     _isLoadingStatus = false;
@@ -131,38 +131,38 @@ class DashboardProvider extends ChangeNotifier {
     ServiceModel(
         title: "Web Development",
         description:
-            "HTML, CSS, JS, React, Next.js, Laravel, PHP, MySQL.",
+            "Website profesional: company profile, toko online, portal bisnis.",
         icon: FontAwesomeIcons.globe,
-        basePrice: 150000),
+        basePrice: 750000),
     ServiceModel(
         title: "Mobile App",
         description:
-            "Flutter, Android Native, React Native.",
+            "Aplikasi Android/iOS siap publish: Flutter, React Native.",
         icon: FontAwesomeIcons.mobileScreen,
-        basePrice: 750000),
+        basePrice: 3000000),
     ServiceModel(
         title: "Data Science & AI",
         description:
-            "Python, Machine Learning, Data Scraping.",
+            "Analisis data bisnis, model prediktif, Python, ML.",
         icon: FontAwesomeIcons.brain,
-        basePrice: 400000),
+        basePrice: 1500000),
     ServiceModel(
         title: "Desktop App",
         description:
-            "Java GUI, C++, C#, Python Tkinter.",
+            "Sistem manajemen internal: inventory, kasir, absensi.",
         icon: FontAwesomeIcons.desktop,
-        basePrice: 200000),
+        basePrice: 800000),
     ServiceModel(
-        title: "Tugas Akademik",
+        title: "Sistem Informasi",
         description:
-            "Algoritma, Struktur Data, Basis Data.",
-        icon: FontAwesomeIcons.book,
-        basePrice: 50000),
+            "ERP, HRMS, CRM skala bisnis dengan dokumentasi lengkap.",
+        icon: FontAwesomeIcons.buildingColumns,
+        basePrice: 5000000),
     ServiceModel(
-        title: "Bug Fixing",
+        title: "Bug Fixing & Audit",
         description:
-            "Perbaikan error pada kode yang sudah ada.",
+            "Perbaikan error kritis, refactoring, dan code review standar industri.",
         icon: FontAwesomeIcons.bug,
-        basePrice: 75000),
+        basePrice: 300000),
   ];
 }

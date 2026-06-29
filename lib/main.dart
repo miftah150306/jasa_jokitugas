@@ -10,20 +10,20 @@ void main() {
   runApp(
     ChangeNotifierProvider(
       create: (_) => DashboardProvider(),
-      child: const JokiProApp(),
+      child: const DevConnectApp(),
     ),
   );
 }
 
-class JokiProApp extends StatelessWidget {
-  const JokiProApp({super.key});
+class DevConnectApp extends StatelessWidget {
+  const DevConnectApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     final provider = Provider.of<DashboardProvider>(context);
     
     return MaterialApp(
-      title: 'JokiPro Dashboard',
+      title: 'DevConnect — Freelance IT Services',
       debugShowCheckedModeBanner: false,
       themeMode: provider.isDarkMode ? ThemeMode.dark : ThemeMode.light,
       theme: ThemeData(

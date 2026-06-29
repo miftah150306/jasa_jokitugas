@@ -151,7 +151,7 @@ class _ServiceCardWidgetState extends State<ServiceCardWidget> {
                     child: ElevatedButton(
                       onPressed: () {
                         final msg =
-                            'Halo Admin JokiPro 👋\n\nSaya *${widget.educationLabel}* ingin konsultasi mengenai:\n*${widget.service.title}*\n\nMohon info lebih lanjut ya 🙏';
+                            'Halo Tim DevConnect! \ud83d\udc4b\n\nSaya tertarik dengan paket *${widget.educationLabel}* untuk:\n*${widget.service.title}*\n\nMohon info lebih lanjut \ud83d\ude4f';
                         launchWA(msg);
                       },
                       style: ElevatedButton.styleFrom(

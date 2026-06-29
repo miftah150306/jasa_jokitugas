@@ -147,7 +147,7 @@ class Sidebar extends StatelessWidget {
                 ),
                 const SizedBox(width: 12),
                 Text(
-                  "JokiPro",
+                  "DevConnect",
                   style: GoogleFonts.outfit(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
@@ -220,7 +220,7 @@ class Sidebar extends StatelessWidget {
                       Icon(FontAwesomeIcons.code, size: 11, color: provider.primaryColor),
                       const SizedBox(width: 6),
                       Text(
-                        "JokiPro v1.3",
+                          "DevConnect v2.0",
                         style: TextStyle(
                           color: provider.primaryColor.withOpacity(0.8),
                           fontSize: 11,
@@ -396,23 +396,23 @@ class DashboardHomePage extends StatelessWidget {
                     borderRadius: BorderRadius.circular(30),
                     border: Border.all(color: provider.primaryColor.withOpacity(0.4)),
                   ),
-                  child: Text('✨ Platform Joki Terpercaya #1 Indonesia',
+                  child: Text('🚀 Platform Freelance IT #1 Indonesia',
                       style: TextStyle(color: provider.primaryColor, fontSize: 12, fontWeight: FontWeight.bold)),
                 ),
                 const SizedBox(height: 16),
                 Text(
-                  'Upgrade Tugasmu ke\nLevel Expert 🚀',
+                  'Bangun Proyek IT-mu dengan\nTim Developer Expert 🚀',
                   style: GoogleFonts.outfit(fontSize: 34, fontWeight: FontWeight.bold, height: 1.2, color: provider.textColor),
                 ),
                 const SizedBox(height: 12),
                 Text(
-                  'Pengerjaan super cepat, kode bersih, dan dokumentasi lengkap.\nTersedia untuk SD, SMP, SMK, hingga Mahasiswa.',
+                  'Solusi freelance terpercaya untuk bisnis, startup, dan individu.\nTersedia paket Starter, Basic, Pro, hingga Enterprise.',
                   style: TextStyle(color: provider.textMuted, fontSize: 14, height: 1.6),
                 ),
                 const SizedBox(height: 24),
                 Wrap(spacing: 12, runSpacing: 12, children: [
                   ElevatedButton.icon(
-                    onPressed: () => launchWA('Halo Admin JokiPro! Saya ingin konsultasi 👋'),
+                    onPressed: () => launchWA('Halo Tim DevConnect! Saya ingin konsultasi proyek 👋'),
                     icon: const Icon(FontAwesomeIcons.whatsapp, size: 16),
                     label: const Text('Konsultasi Gratis'),
                     style: ElevatedButton.styleFrom(
@@ -629,38 +629,38 @@ class FAQSection extends StatelessWidget {
         ),
         const SizedBox(height: 16),
         _faqItem(
-          "Berapa lama waktu pengerjaan tugas atau project?",
-          "Waktu pengerjaan sangat bergantung pada tingkat kesulitan dan lingkup (scope) dari project tersebut. Untuk tugas sederhana, biasanya selesai dalam 12-24 jam. Untuk project skala menengah seperti website atau aplikasi mobile, memakan waktu 3-7 hari. Kami juga melayani sistem prioritas jika deadline Anda sangat ketat.",
+          "Berapa lama waktu pengerjaan project?",
+          "Waktu pengerjaan bergantung pada kompleksitas dan lingkup proyek. Untuk project ringan seperti landing page atau desain presentasi, biasanya selesai dalam 1-3 hari kerja. Untuk project menengah seperti website bisnis atau aplikasi mobile, memakan waktu 1-3 minggu. Kami juga melayani prioritas pengerjaan ekspres jika deadline Anda sangat ketat.",
           provider,
         ),
         _faqItem(
-          "Bagaimana sistem pembayaran di JokiPro?",
-          "Pembayaran dapat dilakukan setelah kesepakatan harga. Kami menerapkan sistem DP (Down Payment) sebesar 50% di awal sebagai tanda jadi, dan sisa 50% dibayarkan setelah project selesai didemokan atau kode/file siap dikirim ke Anda. Pembayaran bisa via Transfer Bank, e-Wallet (Gopay, OVO, Dana, ShopeePay), maupun QRIS.",
+          "Bagaimana sistem pembayaran di DevConnect?",
+          "Pembayaran dapat dilakukan setelah kesepakatan harga. Kami menerapkan sistem DP (Down Payment) sebesar 50% di awal sebagai tanda jadi, dan sisa 50% dibayarkan setelah project selesai didemokan atau file siap dikirim. Pembayaran bisa via Transfer Bank, e-Wallet (Gopay, OVO, Dana, ShopeePay), maupun QRIS.",
           provider,
         ),
         _faqItem(
-          "Apakah ada garansi jika program error atau ada revisi?",
-          "Tentu! Kami memberikan garansi revisi gratis selama 7-14 hari setelah project diserahkan (tergantung kesepakatan). Garansi ini mencakup bug fixing, perbaikan error yang tidak terduga, atau sedikit perubahan logika yang masih masuk dalam scope awal. Jika ada penambahan fitur baru di luar kesepakatan, akan dikenakan biaya tambahan.",
+          "Apakah ada garansi revisi?",
+          "Tentu! Kami memberikan garansi revisi gratis selama 7-14 hari setelah project diserahkan (tergantung kesepakatan). Garansi ini mencakup bug fixing, perbaikan error yang tidak terduga, atau sedikit perubahan logika yang masih dalam scope awal. Penambahan fitur baru di luar scope akan dikenakan biaya tambahan.",
           provider,
         ),
         _faqItem(
-          "Bahasa pemrograman dan teknologi apa saja yang dikuasai?",
-          "Tim kami terdiri dari developer berpengalaman di berbagai tech stack. Kami menangani Python, Java, C++, C#, PHP (Laravel/CodeIgniter), JavaScript/TypeScript (React, Next.js, Node.js, Express), Dart (Flutter), dan pengelolaan Database (MySQL, PostgreSQL, MongoDB, Firebase).",
+          "Teknologi apa saja yang dikuasai tim DevConnect?",
+          "Tim kami terdiri dari developer berpengalaman di berbagai stack teknologi: Python, Java, C++, C#, PHP (Laravel/CodeIgniter), JavaScript/TypeScript (React, Next.js, Node.js, Express), Dart (Flutter), serta Database (MySQL, PostgreSQL, MongoDB, Firebase).",
           provider,
         ),
         _faqItem(
-          "Apakah privasi dan kerahasiaan tugas saya aman?",
-          "Sangat aman. Kami menjamin 100% kerahasiaan identitas klien dan detail project. Kode yang kami buat tidak akan didistribusikan ulang, dipublikasikan, atau dijual kepada pihak ketiga tanpa izin Anda.",
+          "Apakah privasi dan kerahasiaan proyek saya aman?",
+          "Sangat aman. Kami menjamin 100% kerahasiaan identitas klien dan detail proyek. Source code dan aset yang kami buat tidak akan didistribusikan, dipublikasikan, atau dijual kepada pihak ketiga tanpa izin Anda.",
           provider,
         ),
         _faqItem(
-          "Bagaimana jika saya tidak mengerti kodenya? Apakah dijelaskan?",
-          "Tentu saja. Anda tidak hanya menerima source code (file jadi), tapi kami juga akan memberikan panduan cara menjalankan (run) program tersebut. Jika Anda butuh penjelasan kodingan baris-per-baris untuk keperluan presentasi/sidang, kami juga melayani jasa sesi konsultasi via Zoom/Google Meet (dengan biaya tambahan khusus mentoring).",
+          "Bagaimana jika saya butuh penjelasan teknis kode?",
+          "Anda tidak hanya menerima source code, tapi kami juga menyertakan panduan cara menjalankan program. Jika butuh penjelasan mendalam untuk presentasi bisnis atau demo ke stakeholder, tersedia sesi konsultasi via Zoom/Google Meet (dikenakan biaya tambahan).",
           provider,
         ),
         _faqItem(
-          "Apakah menerima joki untuk ujian atau live coding?",
-          "Mohon maaf, JokiPro berfokus pada pembuatan project, tugas akhir, skripsi, dan bug fixing. Kami tidak menerima jasa joki untuk ujian tertulis, ujian online, maupun live coding test yang bersifat real-time.",
+          "Layanan apa yang TIDAK tersedia di DevConnect?",
+          "DevConnect berfokus pada pembuatan proyek IT, sistem informasi bisnis, dan solusi teknologi profesional. Kami tidak menerima permintaan yang bersifat ilegal, melanggar hak cipta, atau bertentangan dengan etika profesional.",
           provider,
         ),
       ],
@@ -827,7 +827,7 @@ class CalculatorPage extends StatelessWidget {
               final priceCard = _PriceCard(
                 formattedPrice: provider.formattedPrice,
                 onSend: () {
-                  launchWA("Halo Admin JokiPro 👋\nSaya ingin konsultasi project:\n- Jenis: *${provider.selectedTaskType}*\n- Deadline: *${provider.deadline.toInt()} Hari*\n- Estimasi Harga: *Rp ${provider.formattedPrice}*\n\nMohon info lebih lanjut 🙏");
+                  launchWA("Halo Tim DevConnect 👋\nSaya ingin order proyek:\n- Jenis: *${provider.selectedTaskType}*\n- Deadline: *${provider.deadline.toInt()} Hari*\n- Estimasi Biaya: *Rp ${provider.formattedPrice}*\n\nMohon info lebih lanjut 🙏");
                 },
               );
 
@@ -866,7 +866,7 @@ class CalculatorPage extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text("Jenis Project / Tugas", style: TextStyle(fontWeight: FontWeight.bold, color: provider.textColor, fontSize: 15)),
+          Text("Jenis Layanan / Project", style: TextStyle(fontWeight: FontWeight.bold, color: provider.textColor, fontSize: 15)),
           const SizedBox(height: 12),
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
@@ -882,11 +882,10 @@ class CalculatorPage extends StatelessWidget {
                 dropdownColor: provider.cardColor,
                 icon: Icon(Icons.keyboard_arrow_down, color: provider.textMuted),
                 items: [
-                  "Tugas Harian Umum",
-                  "Tugas Matematika",
-                  "Pembuatan Makalah",
-                  "Pembuatan PPT",
-                  "Pemrograman Dasar",
+                  "Landing Page",
+                  "Desain Presentasi",
+                  "Otomatisasi Dokumen",
+                  "Company Profile",
                   "Web Statis",
                   "Web Dinamis",
                   "Mobile App",
@@ -1093,12 +1092,12 @@ class _PriceCard extends StatelessWidget {
 class PortfolioPage extends StatelessWidget {
   const PortfolioPage({super.key});
   static const _items = [
-    {'title': 'Sistem Kasir Flutter', 'tag': 'Mobile App', 'level': 'Kuliah', 'color': 0xFF818CF8, 'icon': 0xf10b},
-    {'title': 'Web E-Commerce PHP', 'tag': 'Web Dinamis', 'level': 'SMK', 'color': 0xFF60A5FA, 'icon': 0xf0ac},
-    {'title': 'Analisis Data Python', 'tag': 'Data Science', 'level': 'Kuliah', 'color': 0xFF34D399, 'icon': 0xf201},
-    {'title': 'Aplikasi Absensi Java', 'tag': 'Desktop App', 'level': 'SMK', 'color': 0xFFFBBF24, 'icon': 0xf108},
-    {'title': 'Landing Page React', 'tag': 'Web Statis', 'level': 'Kuliah', 'color': 0xFFF472B6, 'icon': 0xf15c},
-    {'title': 'Tugas HTML/CSS SMP', 'tag': 'Web Dasar', 'level': 'SMP', 'color': 0xFF2DD4BF, 'icon': 0xf13b},
+    {'title': 'Sistem POS Flutter (Restoran)', 'tag': 'Mobile App', 'level': 'Enterprise', 'color': 0xFF818CF8, 'icon': 0xf10b},
+    {'title': 'Web E-Commerce Next.js', 'tag': 'Web Dinamis', 'level': 'Pro', 'color': 0xFF60A5FA, 'icon': 0xf0ac},
+    {'title': 'Dashboard Analitik Python', 'tag': 'Data Science', 'level': 'Enterprise', 'color': 0xFF34D399, 'icon': 0xf201},
+    {'title': 'Sistem Absensi & HR', 'tag': 'Desktop App', 'level': 'Pro', 'color': 0xFFFBBF24, 'icon': 0xf108},
+    {'title': 'Landing Page SaaS', 'tag': 'Web Statis', 'level': 'Starter', 'color': 0xFFF472B6, 'icon': 0xf15c},
+    {'title': 'Company Profile Website', 'tag': 'Web Bisnis', 'level': 'Basic', 'color': 0xFF2DD4BF, 'icon': 0xf13b},
   ];
   @override
   Widget build(BuildContext context) {
@@ -1109,9 +1108,9 @@ class PortfolioPage extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('Portofolio Hasil Kerja', style: GoogleFonts.outfit(fontSize: 28, fontWeight: FontWeight.bold, color: provider.textColor)),
+          Text('Portofolio Proyek Klien', style: GoogleFonts.outfit(fontSize: 28, fontWeight: FontWeight.bold, color: provider.textColor)),
           const SizedBox(height: 6),
-          Text('Beberapa proyek yang telah berhasil diselesaikan oleh tim JokiPro.', style: TextStyle(color: provider.textMuted)),
+          Text('Beberapa proyek yang telah berhasil diselesaikan oleh tim DevConnect.', style: TextStyle(color: provider.textMuted)),
           const SizedBox(height: 28),
           LayoutBuilder(builder: (context, c) {
             final cols = c.maxWidth > 900 ? 3 : c.maxWidth > 600 ? 2 : 1;
@@ -1167,7 +1166,7 @@ class PortfolioPage extends StatelessWidget {
           const SizedBox(height: 32),
           Center(
             child: ElevatedButton.icon(
-              onPressed: () => launchWA('Halo Admin JokiPro, saya ingin melihat lebih banyak portofolio 🙏'),
+              onPressed: () => launchWA('Halo Tim DevConnect, saya ingin melihat lebih banyak portofolio 🙏'),
               icon: const Icon(FontAwesomeIcons.whatsapp, color: Colors.white),
               label: const Text('Minta Portofolio Lengkap'),
               style: ElevatedButton.styleFrom(backgroundColor: const Color(0xFF25D366), foregroundColor: Colors.white,
@@ -1206,14 +1205,14 @@ class ContactPage extends StatelessWidget {
                     title: 'WhatsApp (Utama)',
                     subtitle: '+62 858-2961-8913 · Respon < 5 menit',
                     buttonText: 'Mulai Chat',
-                    onTap: () => launchWA('Halo Admin JokiPro! 👋 Saya ingin konsultasi mengenai layanan joki tugas.'),
+                    onTap: () => launchWA('Halo Tim DevConnect! 👋 Saya ingin konsultasi mengenai project IT.'),
                   ),
                   const SizedBox(height: 16),
                   _ContactCard(
                     icon: FontAwesomeIcons.instagram,
                     color: const Color(0xFFE1306C),
                     title: 'Instagram',
-                    subtitle: '@jokipro.id · DM untuk konsultasi',
+                    subtitle: '@devconnect.id · DM untuk konsultasi',
                     buttonText: 'Buka Instagram',
                     onTap: () => launchWA('Halo, saya dari Instagram'),
                   ),

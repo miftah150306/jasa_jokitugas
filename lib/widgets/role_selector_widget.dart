@@ -22,7 +22,7 @@ class RoleSelectorWidget extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          'Pilih Jenjang Pendidikanmu',
+          'Pilih Paket Layanan',
           style: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.bold,
@@ -31,7 +31,7 @@ class RoleSelectorWidget extends StatelessWidget {
         ),
         const SizedBox(height: 6),
         Text(
-          'Katalog layanan akan disesuaikan otomatis dengan jenjangmu.',
+          'Katalog layanan akan disesuaikan dengan paket yang Anda pilih.',
           style: TextStyle(color: provider.textMuted, fontSize: 13),
         ),
         const SizedBox(height: 20),

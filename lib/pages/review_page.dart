@@ -22,7 +22,7 @@ class _ReviewPageState extends State<ReviewPage> {
         children: [
           const Text("Berikan Ulasan", style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold)),
           const SizedBox(height: 10),
-          const Text("Kepuasan Anda adalah prioritas kami. Bagikan pengalaman Anda menggunakan layanan JokiPro.", style: TextStyle(color: Colors.white54)),
+          const Text("Kepuasan Anda adalah prioritas kami. Bagikan pengalaman Anda menggunakan layanan DevConnect.", style: TextStyle(color: Colors.white54)),
           const SizedBox(height: 40),
           
           Center(
@@ -60,7 +60,7 @@ class _ReviewPageState extends State<ReviewPage> {
                     width: double.infinity,
                     child: ElevatedButton(
                       onPressed: () {
-                        final msg = "Halo Admin JokiPro, saya ingin memberikan review:\nRating: ${_rating.toInt()}/5\nKomentar: ${_commentController.text}";
+                        final msg = "Halo Tim DevConnect, saya ingin memberikan review:\nRating: ${_rating.toInt()}/5\nKomentar: ${_commentController.text}";
                         launchWA(msg);
                         ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text("Terima kasih! Mengarahkan ke WhatsApp...")));
                       },

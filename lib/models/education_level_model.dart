@@ -23,156 +23,156 @@ class EducationLevel {
 final List<EducationLevel> educationLevels = [
   EducationLevel(
     id: 'sd',
-    label: 'SD',
-    emoji: '🎒',
-    icon: FontAwesomeIcons.school,
+    label: 'Starter',
+    emoji: '🚀',
+    icon: FontAwesomeIcons.rocket,
     accentColor: const Color(0xFFFFD700),
     services: [
       ServiceModel(
-        title: 'Pengenalan Komputer & Internet',
+        title: 'Landing Page Sederhana',
         description:
-            'Tugas dasar komputer, mengenal perangkat keras & lunak, dan cara berinternet dengan aman.',
+            'Website satu halaman profesional: profil bisnis, portofolio personal, atau landing page promosi.',
         icon: FontAwesomeIcons.computer,
-        basePrice: 25000,
+        basePrice: 150000,
       ),
       ServiceModel(
-        title: 'Membuat Presentasi',
+        title: 'Desain Presentasi Bisnis',
         description:
-            'Desain slide PowerPoint yang menarik dan informatif sesuai materi pelajaran SD.',
+            'Slide deck profesional untuk pitch bisnis, proposal klien, atau company profile yang menarik.',
         icon: FontAwesomeIcons.filePowerpoint,
-        basePrice: 30000,
+        basePrice: 100000,
       ),
       ServiceModel(
-        title: 'Logika Dasar & Algoritma Sederhana',
+        title: 'Flowchart & Dokumentasi Teknis',
         description:
-            'Pengenalan logika berpikir, urutan langkah penyelesaian masalah, dan flowchart.',
+            'Diagram alur proses bisnis, SOP digital, dan dokumentasi teknis untuk kebutuhan internal perusahaan.',
         icon: FontAwesomeIcons.diagramProject,
-        basePrice: 35000,
+        basePrice: 120000,
       ),
     ],
   ),
   EducationLevel(
     id: 'smp',
-    label: 'SMP',
-    emoji: '📘',
-    icon: FontAwesomeIcons.bookOpen,
+    label: 'Basic',
+    emoji: '⚡',
+    icon: FontAwesomeIcons.bolt,
     accentColor: const Color(0xFF2DD4BF),
     services: [
       ServiceModel(
-        title: 'Tugas TIK (Word, Excel, PowerPoint)',
+        title: 'Otomatisasi Dokumen Office',
         description:
-            'Pengerjaan tugas Microsoft Office: dokumen, tabel data, dan presentasi sekolah.',
+            'Pembuatan template Word, Excel, dan PowerPoint otomatis dengan macro untuk efisiensi kerja.',
         icon: FontAwesomeIcons.fileWord,
-        basePrice: 40000,
+        basePrice: 200000,
       ),
       ServiceModel(
-        title: 'HTML & CSS Dasar',
+        title: 'Website Company Profile',
         description:
-            'Membuat halaman web sederhana menggunakan HTML dan styling CSS sesuai kurikulum.',
+            'Website bisnis modern dengan HTML/CSS/JS: profil perusahaan, produk, dan form kontak.',
         icon: FontAwesomeIcons.html5,
-        basePrice: 50000,
+        basePrice: 300000,
       ),
       ServiceModel(
-        title: 'Scratch / Coding Visual Dasar',
+        title: 'Mini Game / Aplikasi Interaktif',
         description:
-            'Proyek Scratch, pembuatan game atau animasi sederhana berbasis blok kode visual.',
+            'Aplikasi interaktif ringan untuk keperluan edukasi, event, atau promosi brand bisnis Anda.',
         icon: FontAwesomeIcons.puzzlePiece,
-        basePrice: 45000,
+        basePrice: 250000,
       ),
     ],
   ),
   EducationLevel(
     id: 'smk',
-    label: 'SMK',
-    emoji: '🖥️',
-    icon: FontAwesomeIcons.laptop,
+    label: 'Pro',
+    emoji: '💎',
+    icon: FontAwesomeIcons.gem,
     accentColor: const Color(0xFF60A5FA),
     services: [
       ServiceModel(
-        title: 'Web Development',
+        title: 'Web Development Profesional',
         description:
-            'HTML, CSS, JavaScript, PHP & MySQL. Proyek web statis maupun dinamis.',
+            'Website dinamis full-featured: toko online, sistem manajemen konten, atau portal bisnis.',
         icon: FontAwesomeIcons.globe,
-        basePrice: 150000,
+        basePrice: 750000,
       ),
       ServiceModel(
-        title: 'Basis Data & MySQL',
+        title: 'Desain & Migrasi Database',
         description:
-            'ERD, normalisasi, query SQL, stored procedure, dan desain database relasional.',
+            'Perancangan ERD, normalisasi, query SQL optimal, dan migrasi data untuk sistem bisnis.',
         icon: FontAwesomeIcons.database,
-        basePrice: 100000,
+        basePrice: 400000,
       ),
       ServiceModel(
-        title: 'Jaringan Komputer',
+        title: 'Konfigurasi Infrastruktur IT',
         description:
-            'Konfigurasi Cisco Packet Tracer, subnetting, routing, dan laporan praktikum jaringan.',
+            'Setup jaringan kantor, konfigurasi server, subnetting, routing, dan dokumentasi infrastruktur.',
         icon: FontAwesomeIcons.networkWired,
-        basePrice: 120000,
+        basePrice: 500000,
       ),
       ServiceModel(
-        title: 'Rekayasa Perangkat Lunak (RPL)',
+        title: 'Analisis & Arsitektur Sistem',
         description:
-            'UML diagram, use case, DFD, flowchart, dan dokumentasi proyek RPL.',
+            'UML diagram, use case, DFD, flowchart, dan dokumen spesifikasi kebutuhan perangkat lunak.',
         icon: FontAwesomeIcons.sitemap,
-        basePrice: 130000,
+        basePrice: 350000,
       ),
       ServiceModel(
-        title: 'Pemrograman Desktop',
+        title: 'Aplikasi Desktop Bisnis',
         description:
-            'Aplikasi GUI menggunakan Java (NetBeans), C++, atau Python Tkinter.',
+            'Sistem manajemen internal berbasis desktop: inventory, kasir, absensi, dengan Java, C++, atau Python.',
         icon: FontAwesomeIcons.desktop,
-        basePrice: 200000,
+        basePrice: 800000,
       ),
     ],
   ),
   EducationLevel(
     id: 'kuliah',
-    label: 'Kuliah',
-    emoji: '🎓',
-    icon: FontAwesomeIcons.graduationCap,
+    label: 'Enterprise',
+    emoji: '🏆',
+    icon: FontAwesomeIcons.buildingColumns,
     accentColor: const Color(0xFF818CF8),
     services: [
       ServiceModel(
-        title: 'Algoritma & Struktur Data',
+        title: 'Algoritma & Optimasi Sistem',
         description:
-            'Sorting, searching, linked list, tree, graph, dan analisis kompleksitas.',
+            'Implementasi algoritma efisien, optimasi performa, dan analisis kompleksitas untuk sistem skala besar.',
         icon: FontAwesomeIcons.codeBranch,
-        basePrice: 100000,
+        basePrice: 500000,
       ),
       ServiceModel(
-        title: 'Web Fullstack',
+        title: 'Web App Fullstack',
         description:
-            'React, Vue, Next.js, Laravel, Node.js — end-to-end web application development.',
+            'Aplikasi web end-to-end: React, Vue, Next.js, Laravel, Node.js — siap produksi & deploy.',
         icon: FontAwesomeIcons.layerGroup,
-        basePrice: 500000,
+        basePrice: 2000000,
       ),
       ServiceModel(
         title: 'Mobile App (Flutter)',
         description:
-            'Aplikasi Android/iOS dengan Flutter, state management, dan integrasi API.',
+            'Aplikasi Android/iOS siap publish: state management, REST API, notifikasi push, dan Play Store release.',
         icon: FontAwesomeIcons.mobileScreen,
-        basePrice: 750000,
+        basePrice: 3000000,
       ),
       ServiceModel(
         title: 'Data Science & Machine Learning',
         description:
-            'Python, Pandas, Scikit-learn, TensorFlow — analisis data dan model ML.',
+            'Pipeline data end-to-end: Python, Pandas, Scikit-learn, TensorFlow — analisis & model prediktif.',
         icon: FontAwesomeIcons.brain,
-        basePrice: 400000,
+        basePrice: 1500000,
       ),
       ServiceModel(
-        title: 'Skripsi / Tugas Akhir',
+        title: 'Sistem Informasi Perusahaan',
         description:
-            'Bab 1–5, jurnal, implementasi sistem, dan dokumentasi lengkap berbasis IT.',
-        icon: FontAwesomeIcons.bookBookmark,
-        basePrice: 1500000,
+            'Pengembangan sistem ERP, HRMS, atau CRM skala enterprise dengan dokumentasi teknis lengkap.',
+        icon: FontAwesomeIcons.buildingColumns,
+        basePrice: 5000000,
       ),
       ServiceModel(
         title: 'Bug Fixing & Code Review',
         description:
-            'Analisis dan perbaikan error, optimasi kode, serta code review profesional.',
+            'Audit kode, perbaikan bug kritis, refactoring, dan code review standar industri untuk proyek Anda.',
         icon: FontAwesomeIcons.bug,
-        basePrice: 75000,
+        basePrice: 300000,
       ),
     ],
   ),

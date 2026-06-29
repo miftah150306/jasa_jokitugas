@@ -87,7 +87,7 @@ class StatusCheckerPage extends StatelessWidget {
                         colors: [provider.primaryColor, provider.secondaryColor],
                       ).createShader(bounds),
                       child: Text(
-                        'Flutter Developer & Founder JokiPro',
+                        'Flutter Developer & Founder DevConnect',
                         style: GoogleFonts.outfit(
                           fontSize: 14,
                           fontWeight: FontWeight.w600,
@@ -122,7 +122,7 @@ class StatusCheckerPage extends StatelessWidget {
                           icon: FontAwesomeIcons.whatsapp,
                           label: 'WhatsApp',
                           color: const Color(0xFF25D366),
-                          onTap: () => launchWA('Halo Miftah! Saya tertarik dengan layanan JokiPro 👋'),
+                          onTap: () => launchWA('Halo Miftah! Saya tertarik dengan layanan DevConnect 👋'),
                         ),
                         _SocialBtn(
                           icon: FontAwesomeIcons.instagram,
@@ -167,7 +167,7 @@ class StatusCheckerPage extends StatelessWidget {
                 title: '👨‍💻 Tentang Saya',
                 child: Text(
                   'Halo! Saya Miftah, seorang Flutter Developer yang passionate dalam membangun aplikasi mobile dan web yang indah dan fungsional. '
-                  'Saya mendirikan JokiPro sebagai platform untuk membantu pelajar dan mahasiswa menyelesaikan tugas pemrograman mereka dengan kualitas terbaik.\n\n'
+                  'Saya mendirikan DevConnect sebagai platform freelance IT untuk membantu bisnis, startup, dan individu mewujudkan proyek teknologi mereka dengan kualitas terbaik.\n\n'
                   'Dengan pengalaman lebih dari 3 tahun di dunia pengembangan aplikasi, saya telah menyelesaikan ratusan proyek mulai dari aplikasi sederhana hingga sistem enterprise.',
                   style: TextStyle(color: provider.textMuted, fontSize: 13.5, height: 1.7),
                 ),

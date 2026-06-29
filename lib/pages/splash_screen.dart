@@ -94,7 +94,7 @@ class _SplashScreenState extends State<SplashScreen> {
                     ),
                 const SizedBox(height: 20),
                 Text(
-                  "JokiPro",
+                  "DevConnect",
                   style: GoogleFonts.outfit(
                     fontSize: 48,
                     fontWeight: FontWeight.bold,
@@ -108,7 +108,7 @@ class _SplashScreenState extends State<SplashScreen> {
                     colors: [Color(0xFF6366F1), Color(0xFFEC4899)],
                   ).createShader(bounds),
                   child: Text(
-                    "PREMIUM CODING SOLUTIONS",
+                    "FREELANCE IT SERVICES",
                     style: GoogleFonts.outfit(
                       fontSize: 12,
                       fontWeight: FontWeight.w600,
